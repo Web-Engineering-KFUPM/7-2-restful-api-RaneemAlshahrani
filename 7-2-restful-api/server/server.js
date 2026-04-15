@@ -2,7 +2,8 @@ import express from "express";
 import cors from "cors";
 
 // import dotenv and load environment variables from .env
-
+import dotenv from "dotenv";
+dotenv.config();    
 
 import { connectDB } from "./db.js";
 import { Song } from "./models/song.model.js";
