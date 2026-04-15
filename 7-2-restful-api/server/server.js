@@ -19,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 await connectDB(process.env.MONGO_URL);
+app.get("/", (req, res) => res.send("Hello, world!"));
 
 // api/songs (Read all songs)
 app.get("/api/songs", async (req, res) => {
